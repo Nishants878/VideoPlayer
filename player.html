@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Player</title>
+    <link rel="stylesheet" href="./design.css">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@1,700&family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body>
+    <div id="main-container">
+    <a class="back" href="./index.html"><img class="big-back" src="https://image.flaticon.com/icons/svg/860/860774.svg" alt="back icon"></a>
+    <div id="top-title"> <h1 id="head">Video Player</h1> </div>
+
+    <div id="player-section">
+        <div id="player-wrapper">
+            <iframe id="video-player" src="" width="100%" height="360" controls  frameborder="0" allow="autoplay;fullscreen"></iframe>
+            <div id="up">
+                <div id="video-actions">
+                    <p><span id="views-count">98.4k</span>views</p>
+                    <div>
+                        <i class="far fa-heart"></i>
+                        <i class="far fa-comment-alt"></i>
+                        <i class="far fa-bookmark"></i>
+                    </div>
+                </div>
+                <h3 id="video-title"></h3>
+                <p id="video-description"></p>
+            </div>
+        </div>
+        <div id="playlist-wrapper">
+
+        </div>
+    </div>
+</div>
+    <script src="./func.js"></script>
+
+</body>
+</html>

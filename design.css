@@ -1,0 +1,131 @@
+
+body{
+    box-sizing: border-box;
+    background: #74ebd5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ACB6E5, #74ebd5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ACB6E5, #74ebd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+    body::-webkit-scrollbar {
+        width: 0.5rem;
+      }
+      
+      body::-webkit-scrollbar-track {
+        background: #78E8D6;
+      }
+      
+      body::-webkit-scrollbar-thumb {
+        background: #ABB6E5;
+      }
+      .big-back{
+         width: 42px;
+     
+     }
+   
+
+#head{
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#top-title{
+    text-align: center;
+    font-family: 'Balsamiq Sans', cursive;
+    font-weight: 900;
+    font-size: 28px;
+    
+}
+
+#player-section{
+    display: flex;
+    background-color: #fff;
+    margin: 0 auto;
+    width: 80%;
+}
+#player-wrapper{
+    width: 70%;
+    border-right: 2px solid rgb(228, 224, 224);
+    margin-top: 10px;
+    box-sizing: border-box;
+    padding: 0px 20px;
+}
+#video-actions{
+    color: darkcyan;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    padding: 20px 20px 0px;
+    background: #ecf0f3;
+    margin: 0;
+    box-shadow: 13px 13px 20px #cbced1,
+    -13px -13px 20px #ffffff
+}
+#up{
+    background: #ecf0f3;
+    box-shadow: 13px 13px 20px #cbced1,
+    -13px -13px 20px #ffffff 
+}
+#video-title{
+    padding: 10px 10px 0;
+    margin: 0;
+    border-bottom: 1px solid #ccc;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+}
+#video-description{
+    padding: 10px;
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+.far {
+    margin: 0 8px;
+}
+#playlist-wrapper{
+    width: 30%;
+    height: 100vh;
+    overflow: auto;
+}
+.video-card{
+    box-shadow: -7px -7px 20px 0 rgba(255,255,255,0.7), 7px 7px 20px 0 rgba(0,0,0,0.2);
+    border-radius: 6px;
+    margin: 8px;
+    width: calc(100% - 16px);
+    background-color: #fff;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.video-card:hover{
+    box-shadow: inset -7px -7px 20px 0 rgba(255,255,255,0.7), inset 7px 7px 20px 0 rgba(0,0,0,0.2);
+}
+
+.video-card > a{
+    text-decoration: none;
+    color: black;
+}
+
+.video-card > a > img{
+    width: 100%;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+.title-wrapper{
+    margin-top: 5px;
+    text-align: center;
+}
+.card-title{
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+}
+@media screen and (max-width: 479px) {
+    body{
+      margin-top: 0;
+      margin-left: 0;
+      margin-right: 0;
+    }
+    #player-section{
+        width: 100%;
+    }
+}

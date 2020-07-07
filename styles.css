@@ -1,0 +1,154 @@
+*{
+    box-sizing: border-box;
+    
+}
+
+body{
+    margin: 0;
+    color: #555;
+    background: #ecf0f3;
+    font-family: 'Roboto Mono', monospace;
+    
+    
+}
+body::-webkit-scrollbar {
+    width: 0.75rem;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: #ACDEDF;
+  }
+  #progress-loader{
+    display: none;
+  }
+
+  
+#main-grid{
+    display: flex;
+  flex-wrap: wrap;
+  margin-left: 10%;
+  margin-top: 84px;
+  
+  
+  
+}
+.video-card{
+    width: calc(25% - 60px);
+  display: flex;
+  flex-direction: column;
+  
+  border-radius: 10px;
+  margin: 10px;
+  border: 1px solid #fff;
+  background: #ecf0f3;
+    box-shadow: 13px 13px 20px #cbced1,
+                -13px -13px 20px #ffffff
+
+}
+.video-card:hover{
+    box-shadow: inset 8px 8px 8px #cbced1,
+    inset -8px -8px 8px #ffffff; 
+}
+.video-card > a {
+    text-decoration: none;
+  }
+.video-card img{
+    width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+   }
+.card-title{
+    font-size: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: black;
+  
+}
+
+
+/* header design */
+header{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    background: rgba(220,220,220);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+ul{
+    margin-right: 25px;
+}
+
+ul li{
+    min-width: 130px;
+    font-weight: 500;
+    padding: 15px;
+    margin: 0 15px;
+    color: black;
+    font-size: 16px;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    box-shadow: -7px -7px 20px 0 rgba(255,255,255,0.7), 7px 7px 20px 0 rgba(0,0,0,0.2);
+    border-radius: 50%;
+}
+ul li:hover{
+    cursor: pointer;
+    box-shadow: inset -7px -7px 20px 0 rgba(255,255,255,0.7), inset 7px 7px 20px 0 rgba(0,0,0,0.2);
+    
+}
+#active{
+    cursor: pointer;
+    box-shadow: inset -7px -7px 20px 0 rgba(255,255,255,0.7), inset 7px 7px 20px 0 rgba(0,0,0,0.2);
+    color: cornflowerblue;
+    
+}
+/* logo degin */
+#logo{
+    background: url("https://img1-placeit-net.s3-accelerate.amazonaws.com/uploads/stage/stage_image/67388/optimized_large_thumb_stage.jpg");
+    width: 75px;
+    height: 75px;
+    border-radius: 20%;
+    margin-left: 25px;
+    box-shadow: 
+    /* logo shadow */
+     0px 0px 2px #5f5f5f,
+     /* offset */
+     0px 0px 0px 5px #ecf0f3,
+     /* bottom right */
+     8px 8px 15px #a7aaaf,
+     /* top left */
+     -8px -8px 15px #ffffff
+    ;
+    cursor: pointer;
+}
+#logo:hover{
+    background: url("https://img.freepik.com/free-vector/colorful-ribbon-fish-abstract-logo-icon_126523-255.jpg?size=626&ext=jpg");
+}
+/* .colorChange{
+    animation: colorchangethegardencafe 1s infinite;
+}
+@keyframes colorchangethegardencafe{
+    0%{color:#ccccff;}
+    25%{color: #b2b2ff;}
+    50%{color: #9999ff;}
+    100%{color: cornflowerblue;}
+
+} */
+
+@media screen and (max-width: 479px) {
+  body{
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #main-grid{
+    width: 100%;
+  }
+}
